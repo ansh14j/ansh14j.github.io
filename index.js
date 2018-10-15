@@ -56,7 +56,7 @@ window.onload = function() {
     e.preventDefault();
 
     // grab the values entered into the form fields and store them in an object ready for being inserted into the DB
-    let newItem = { title: titleInput.value, body: bodyInput.value };
+    let newItem = { title: titleInput.value, body: bodyInput.value , age: ageInput.value};
 
     // open a read/write db transaction, ready for adding the data
     let transaction = db.transaction(['notes'], 'readwrite');
@@ -70,6 +70,8 @@ window.onload = function() {
       // Clear the form, ready for adding the next entry
       titleInput.value = '';
       bodyInput.value = '';
+      ageInput.value = '';
+
     };
 
     // Report on the success of the transaction completing, when everything is done
