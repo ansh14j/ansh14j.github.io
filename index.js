@@ -2,6 +2,7 @@
 const list = document.querySelector('ul');
 const titleInput = document.querySelector('#title');
 const bodyInput = document.querySelector('#body');
+const ageInput = document.querySelector('#age');
 const form = document.querySelector('form');
 const submitBtn = document.querySelector('form button');
 
@@ -113,7 +114,7 @@ window.onload = function() {
 
         listItem.appendChild(h3); 
         listItem.appendChild(para);
-        listItem.appendChild(h6);
+        listItem.appendChild(h6); 
         list.appendChild(listItem);
 
 
