@@ -109,10 +109,13 @@ window.onload = function() {
         let listItem = document.createElement('li');
         let h3 = document.createElement('h3');
         let para = document.createElement('p');
+        let h6 = document.createElement('h6');
 
         listItem.appendChild(h3);
         listItem.appendChild(para);
+        listItem.appendChild(h6);
         list.appendChild(listItem);
+
 
         // Put the data from the cursor inside the h3 and para
         h3.textContent = cursor.value.title;
