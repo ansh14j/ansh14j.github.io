@@ -111,7 +111,7 @@ window.onload = function() {
         let para = document.createElement('p');
         let h6 = document.createElement('h6');
 
-        listItem.appendChild(h3);
+        listItem.appendChild(h3); 
         listItem.appendChild(para);
         listItem.appendChild(h6);
         list.appendChild(listItem);
@@ -120,6 +120,7 @@ window.onload = function() {
         // Put the data from the cursor inside the h3 and para
         h3.textContent = cursor.value.title;
         para.textContent = cursor.value.body;
+        h6.textContent = cursor.value.age;
 
         // Store the ID of the data item inside an attribute on the listItem, so we know
         // which item it corresponds to. This will be useful later when we want to delete items
