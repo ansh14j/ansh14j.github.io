@@ -42,6 +42,7 @@ window.onload = function() {
     // Define what data items the objectStore will contain
     objectStore.createIndex('title', 'title', { unique: false });
     objectStore.createIndex('body', 'body', { unique: false });
+    objectStore.createIndex('id', 'id', { unique: false });
 
     console.log('Database setup complete');
   };
